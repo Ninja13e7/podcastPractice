@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+.root {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 12px;
+}
+
+header {
+    background: #fff;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    padding: 8px 24px;
+}
+
+nav.main .links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 0 16px;
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+}
+
+.content {
+    background-color: aquamarine;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.aside {
+    background-color: cyan;
+    flex-basis: 200px;
+    height: 100%;
+}
+
+.sidebar {
+    /* Скрываем сайдбар */
+    display: none;
+    background-color: cyan;
+    flex-basis: 200px;
+    height: 100%;
+}
+
+/* Пример 1: Если хотим показывать сайдбар на устройствах от с шириной больше 768px */
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+/* Пример 2: Меняем направление флекс контейнера */
+@media (max-width: 920px) {
+    .main-content {
+        flex-direction: column;
+    }
+}

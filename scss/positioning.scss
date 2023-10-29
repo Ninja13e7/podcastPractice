@@ -1,0 +1,73 @@
+@import './_box-sizing';
+
+code {
+    font-size: 18px;
+}
+
+.block {
+    border: solid 1px;
+    width: 200px;
+    height: 200px;
+    margin: 12px;
+    padding: 30px 0;
+    background-color: rgb(253, 253, 24);
+
+    &--green {
+        background-color: rgb(116, 253, 24);
+    }
+
+    &--purple {
+        background-color: rgb(253, 24, 242);
+    }
+
+    &--blue {
+        background-color: rgb(24, 226, 253);
+    }
+
+    &--relative {
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    &--absolute {
+        position: absolute;
+        bottom: -20px;
+        right: -50px;
+    }
+
+    &--fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    &__title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 21px;
+        margin-bottom: 16px;
+    }
+
+    &__code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.examples {
+    margin: 0 8px;
+    position: relative;
+}
+
+.sections {
+    display: flex;
+}
+
+.flexbox {
+    .examples {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,500&display=swap');
+$textColorWhite: #fdfdfd;
+$textColorGreen: #1a3e3e;
+
+@media screen and (max-width: 480px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fullScreen {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 480px;
+        height: 600px;
+        background-image: url(../images/background.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 84px;
+        height: 44px;
+    }
+    .navbar__link,
+    .navbar__button {
+        display: none;
+    }
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 234px;
+    }
+
+    .content {
+        padding-top: 20px;
+        width: 358px;
+    }
+
+    .mainText_deks {
+        display: none;
+    }
+    .mainText_mob {
+        display: inline-flex;
+        align-items: end;
+        width: 345px;
+        color: #fdfdfd;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    .form__field {
+        display: none;
+    }
+    .form__button {
+        display: inline-flex;
+        margin-top: 32px;
+        margin-bottom: 50px;
+        padding: 16px 36px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: $textColorGreen;
+        font-family: Nunito Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 125% */
+        letter-spacing: 0.192px;
+    }
+}
+@media screen and (min-width: 481px) {
+    #menu__tranform {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fullScreen {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1920px;
+        height: 985px;
+        background-image: url(../images/background.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 137px;
+        height: 72px;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 460px;
+    }
+    .mainText_mob {
+        display: none;
+    }
+    .mainText_deks {
+        color: $textColorWhite;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 1px;
+        margin-bottom: 35px;
+    }
+
+    .content {
+        padding-top: 25px;
+        width: 1180px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 15px;
+
+        &__link {
+            color: $textColorWhite;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &__button {
+            padding: 12px 24px;
+            background-color: #1a3e3e;
+            border-radius: 4px;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .form {
+        display: flex;
+        height: 120px;
+
+        padding: 40px 42px 0 42px;
+
+        gap: 24px;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(3px);
+
+        &__field {
+            width: 270px;
+
+            p {
+                color: $textColorWhite;
+                padding: 0 8px;
+                margin-top: 8px;
+            }
+
+            select,
+            input {
+                padding: 16px;
+                background-color: transparent;
+                color: $textColorWhite;
+                border-radius: 10px;
+                border: 1px solid #e1e3e4;
+            }
+
+            select {
+                width: 270px;
+                option {
+                    color: black;
+                    background-color: transparent;
+                }
+            }
+
+            input {
+                width: 235px;
+            }
+        }
+
+        &__button {
+            padding: 16px 36px;
+            border-radius: 4px;
+            background: #fdfdfd;
+
+            color: $textColorGreen;
+        }
+    }
+}

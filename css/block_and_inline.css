@@ -1,0 +1,25 @@
+/* Селектор по классу bounds */
+.bounds {
+    border: solid 50px;
+    margin-bottom: 24px;
+}
+
+/* Селектор по классам block-element и inline-element */
+.block-element,
+.inline-element {
+    background: #ffe92c;
+    padding: 40px;
+    margin: 40px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Селектор по классу inline-element, который является первым потомком родителя */
+.inline-element:first-child {
+    background: #fc4242;
+}
+
+/* Селектор по классу inline-element, который является последним потомком родителя */
+.inline-element:last-child {
+    background: #ffe92c91;
+}
